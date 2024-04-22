@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceanica</title>
+
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- navbar start -->
+    <!-- <header
+      class="navbar flex justify-between bg-sky-200 fixed top-0 left-0 right-0 z-50"
+    >
+      <h1 class="text-xl text-bg font-semibold">Oceanica.</h1>
+      <div>
+        <button class="text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+    </header> -->
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section
+      class="min-h-screen relative flex items-center bg-[url('img/home/bg.jpg')] bg-center bg-cover bg-no-repeat bg-blend-multiply bg-gray-400"
+    >
+      <div class="px-7 md:px-16 text-white max-w-full italic">
+        <div class="mb-8">
+          <h2 class="text-3xl md:text-5xl font-medium mb-2">Welcome To</h2>
+          <h1
+            class="text-5xl md:text-8xl mb-2 font-semibold text-primary tracking-widest"
+          >
+            OCEANICA
+          </h1>
+          <p class="text-sm md:text-2xl font-light">
+            menjaga ekosistem laut secara keberlangsungan demi menjaga
+            keseimbangan bumi.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-5">
+          <button
+            class="bg-primary hover:bg-primary/80 p-4 py-3 font-medium rounded-xl text-lg md:text-2xl text-font outline-none"
+          >
+            Baca Selengkapnya
+          </button>
+          <button
+            class="bg-transparent hover:bg-primary/80 p-4 py-3 font-medium rounded-xl text-lg md:text-2xl text-white outline-primary outline"
+          >
+            Tentang kami
+          </button>
+        </div>
+        <div class="bg-sky-500 min-w-max">
+          <img
+            class="absolute bottom-0 w-[100%] left-1/2 transform -translate-x-1/2"
+            src="src/img/home/svg1.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- quote start -->
+    <section class="py-14 flex justify-center">
+      <div class="px-7 md:px-16 text-center">
+        <strong class="text-3xl md:text-6xl font-semibold text-dark"
+          ><span class="text-font">Laut membutuhkan mu </span> dan kamu juga
+          membutuhkan laut</strong
+        >
+      </div>
+    </section>
+    <!-- quote end -->
+
+    <!-- carousel start -->
+    <section class="py-8 md:py-12 relative">
+      <div class="min-w-full absolute top-5">
+        <img src="src/img/home/svg2.svg" alt="" class="w-full" />
+      </div>
+      <!-- Mobile and Tabley -->
+      <div class="w-full carousel lg:hidden">
+        <div class="carousel-item w-full">
+          <div class="max-w-full">
+            <img src="src/img/home/bg1.jpg" alt="" class="w-full" />
+            <div class="mx-7 md:mx-16 mt-6">
+              <h1 class="text-3xl md:text-5xl font-semibold mb-2 md:mb-5">
+                Maraknya Sampah Plastik Di Laut
+              </h1>
+              <p class="text-sm md:text-2xl font-light mb-4 md:mb-8">
+                Ratusan ribu ton sampah mencemari lautan tiap tahunnya. Sebagian
+                besar sampah yang ada di lautan adalah sampah plastik. Sampah
+                plastik yang terapung di laut atau mengendap di dasar laut dapat
+                merusak lingkungan laut seperti terumbu karang, lamun, atau
+                habitat lainnya. rusaknya lingkungan laut berdampak fatal bagi
+                keseimbangan dan ekosistem laut
+              </p>
+              <div class="my-5">
+                <a
+                  href="#"
+                  class="bg-primary px-3 py-2 text-sm md:text-2xl font-medium rounded-lg"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item w-full">
+          <div class="max-w-full">
+            <img src="src/img/home/bg2.jpg" alt="" class="w-full" />
+            <div class="mx-7 md:mx-16 mt-6">
+              <h1 class="text-3xl md:text-5xl font-semibold mb-2 md:mb-5">
+                Dampaknya Bagi Kehidupan Laut
+              </h1>
+              <p class="text-sm md:text-2xl font-light mb-4 md:mb-8">
+                Selain merusak lingkungan, sampah plastik juga mengancam
+                kehidupan satwa yang ada di laut. Satwa laut sering kali
+                tersangkut atau menelan sampah plastik yang akhirnya bisa
+                menyebabkan luka, infeksi, atau bahkan kematian. Hal ini sangat
+                berdampak pada populasi satwa laut. Plastik juga bisa mengandung
+                bahan kimia berbahaya yang dapat larut dalam air laut. Ketika
+                satwa laut menelan plastik, bahan kimia tersebut bisa masuk ke
+                dalam tubuh mereka, menyebabkan masalah kesehatan jangka
+                panjang, termasuk kerusakan organ dan sistem kekebalan tubuh.
+              </p>
+              <div class="my-5">
+                <a
+                  href="#"
+                  class="bg-primary px-3 py-2 text-sm md:text-2xl font-medium rounded-lg"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item w-full">
+          <div class="max-w-full">
+            <img src="src/img/home/bg3.jpg" alt="" class="w-full" />
+            <div class="mx-7 md:mx-16 mt-6">
+              <h1 class="text-3xl md:text-5xl font-semibold mb-2 md:mb-5">
+                Dampaknya Bagi Manusia
+              </h1>
+              <p class="text-sm md:text-2xl font-light mb-4 md:mb-8">
+                Sampah plastik di laut berdampak buruk bagi manusia karena dapat
+                mencemari sumber air dan makanan laut yang kemudian dikonsumsi
+                oleh manusia. Plastik juga dapat melepaskan zat kimia berbahaya
+                yang dapat meracuni organisme laut dan akhirnya mencemari rantai
+                makanan, termasuk manusia. Selain itu, plastik yang terurai
+                menjadi mikroplastik juga dapat masuk ke dalam tubuh manusia
+                melalui makanan dan minuman, dengan dampak kesehatan yang belum
+                sepenuhnya dipahami.
+              </p>
+              <div class="my-5">
+                <a
+                  href="#"
+                  class="bg-primary px-3 py-2 text-sm md:text-2xl font-medium rounded-lg"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item w-full">
+          <div class="max-w-full">
+            <img src="src/img/home/bg4.jpg" alt="" class="w-full" />
+            <div class="mx-7 md:mx-16 mt-6">
+              <h1 class="text-3xl md:text-5xl font-semibold mb-2 md:mb-5">
+                Dampaknya Bagi Lingkungan laut
+              </h1>
+              <p class="text-sm md:text-2xl font-light mb-4 md:mb-8">
+                Plastik dapat menyebabkan pencemaran air laut, merusak ekosistem
+                terumbu karang, mengganggu hewan laut, seperti penyu, burung
+                laut, dan mamalia laut yang dapat memakan atau terperangkap
+                dalam plastik. Selain itu, plastik juga dapat mengganggu proses
+                fotosintesis fitoplankton, yang merupakan dasar rantai makanan
+                laut. Ketika plastik terurai menjadi mikroplastik, ia juga dapat
+                mencemari habitat laut dan menjadi ancaman bagi keanekaragaman
+                hayati laut.
+              </p>
+              <div class="my-5">
+                <a
+                  href="#"
+                  class="bg-primary px-3 py-2 text-sm md:text-2xl font-medium rounded-lg"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- desktop -->
+      <div class="w-full hidden lg:carousel rounded-box">
+        <div
+          class="carousel-item flex w-full bg-[url('img/home/bg1.jpg')] bg-blend-multiply bg-gray-400 bg-center bg-no-repeat bg-cover"
+        >
+          <div
+            class="card max-w-lg bg-white bg-opacity-25 backdrop-blur-lg mx-24 my-32 shadow-lg shadow-black"
+          >
+            <div class="card-body">
+              <h2
+                class="card-title text-5xl text-primary mb-3 pb-4 border-b-2 border-solid border-bg"
+              >
+                Maraknya Sampah Plastik Di Laut
+              </h2>
+              <p class="text-xl text-bg font-light mb-4">
+                Ratusan ribu ton sampah plastik mencemari lautan setiap tahun.
+                Sampah tersebut merusak lingkungan laut, seperti terumbu karang
+                dan habitat lainnya, berdampak fatal bagi keseimbangan dan
+                ekosistem laut.
+              </p>
+              <div class="card-actions my-2">
+                <a
+                  href="#"
+                  class="bg-primary hover:bg-primary/80 px-3 py-2 text-xl font-medium rounded-lg"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item flex justify-end w-full bg-[url('img/home/bg2.jpg')] bg-blend-multiply bg-gray-400 bg-center bg-no-repeat bg-cover"
+        >
+          <div
+            class="card max-w-lg bg-white bg-opacity-25 backdrop-blur-lg mx-24 my-32 shadow-lg shadow-black"
+          >
+            <div class="card-body">
+              <h2
+                class="card-title text-5xl text-primary mb-3 pb-4 border-b-2 border-solid border-bg"
+              >
+                Dampaknya Bagi Kehidupan Laut
+              </h2>
+              <p class="text-xl text-bg font-light mb-4">
+                Sampah plastik mengancam satwa laut dengan menyebabkan luka,
+                infeksi, dan kematian karena seringkali tertelan atau
+                tersangkut. Plastik juga berpotensi mengandung bahan kimia
+                berbahaya yang merusak organ dan sistem kekebalan tubuh satwa
+                laut.
+              </p>
+              <div class="card-actions my-2">
+                <a
+                  href="#"
+                  class="bg-primary hover:bg-primary/80 px-3 py-2 text-xl font-medium rounded-lg"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item flex w-full bg-[url('img/home/bg3.jpg')] bg-blend-multiply bg-gray-400 bg-center bg-no-repeat bg-cover"
+        >
+          <div
+            class="card max-w-lg bg-white bg-opacity-25 backdrop-blur-lg mx-24 my-32 shadow-lg shadow-black"
+          >
+            <div class="card-body">
+              <h2
+                class="card-title text-5xl text-primary mb-3 pb-4 border-b-2 border-solid border-bg"
+              >
+                Dampaknya Bagi Manusia
+              </h2>
+              <p class="text-xl text-bg font-light mb-4">
+                Sampah plastik laut mencemari sumber air dan makanan laut yang
+                dikonsumsi manusia. Plastik melepaskan zat berbahaya yang
+                meracuni organisme laut dan mencemari rantai makanan, termasuk
+                manusia. Mikroplastik yang terurai juga dapat masuk ke tubuh
+                manusia melalui makanan dan minuman, dampak kesehatannya masih
+                belum sepenuhnya dipahami.
+              </p>
+              <div class="card-actions my-2">
+                <a
+                  href="#"
+                  class="bg-primary hover:bg-primary/80 px-3 py-2 text-xl font-medium rounded-lg"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item flex w-full bg-[url('img/home/bg4.jpg')] bg-blend-multiply bg-gray-400 bg-center bg-no-repeat bg-cover"
+        >
+          <div
+            class="card max-w-lg bg-white bg-opacity-25 backdrop-blur-lg mx-24 my-32 shadow-lg shadow-black"
+          >
+            <div class="card-body">
+              <h2
+                class="card-title text-5xl text-primary mb-3 pb-4 border-b-2 border-solid border-bg"
+              >
+                Dampaknya Bagi Lingkungan laut
+              </h2>
+              <p class="text-xl text-bg font-light mb-4">
+                Plastik menyebabkan pencemaran laut, merusak terumbu karang, dan
+                mengganggu hewan laut seperti penyu, burung laut, dan mamalia
+                laut. Plastik juga mengganggu fotosintesis fitoplankton, dasar
+                rantai makanan laut, serta mencemari habitat laut dan mengancam
+                keanekaragaman hayati laut saat terurai menjadi mikroplastik.
+              </p>
+              <div class="card-actions my-2">
+                <a
+                  href="#"
+                  class="bg-primary hover:bg-primary/80 px-3 py-2 text-xl font-medium rounded-lg"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- carousel end -->
+
+    <!-- daftar baca start -->
+    <section class="py-40 max-w-full bg-blue-300 relative">
+      <div class="absolute top-0 min-w-full">
+        <img src="src/img/home/svg3.svg" alt="" class="w-full" />
+      </div>
+      <div class="flex flex-col md:flex-row justify-center">
+        <div class="mx-7 md:mx-16 mb-12">
+          <h2 class="text-font font-semibold text-3xl md:text-5xl mb-1 md:mb-4">
+            Daftar Baca
+          </h2>
+          <p class="text-font font-light text-sm md:text-lg">
+            Menumpuknya sampah plastik di laut tentu akan berdampak buruk pada
+            kehidupan manusia kedepannya, oleh Karena itu kita harus merawatnya
+            dengan baik.
+          </p>
+        </div>
+        <!-- md screen -->
+        <div class="flex lg:max-w-[52rem] md:max-w-[30rem]">
+          <!-- <button id="scroll-left-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+              />
+            </svg>
+          </button> -->
+          <ul
+            class="flex wrapper overflow-x-auto touch-auto whitespace-nowrap scroll-smooth scrollable-list"
+          >
+            <li
+              class="overflow-hidden mx-2 cardItem list-none min-w-[280px] h-[380px] bg-[url('img/page-1/bg.jpg')] bg-cover bg-center bg-no-repeat py-8 px-4 rounded-lg bg-blend-multiply bg-gray-300 hover:bg-gray-500 transition ease-in-out duration-300"
+            >
+              <div class="text-center">
+                <h3
+                  class="text-white text-sm font-bold bg-light p-2 bg-opacity-80 rounded-xl mb-2"
+                >
+                  PILAR KEHIDUPAN BUMI
+                </h3>
+                <p class="text-white text-xl font-semibold text-wrap">
+                  Mengenal Mamfaat Laut bagi bumi.
+                </p>
+              </div>
+              <div class="flex justify-center mt-24">
+                <a
+                  href="#"
+                  class="btn text-white bg-light bg-opacity-80 hover:bg-opacity-100 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 transition ease-in-out duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li
+              class="overflow-hidden mx-2 cardItem relative list-none min-w-[280px] h-[380px] bg-[url('img/page-1/bg.jpg')] bg-cover bg-center bg-no-repeat py-8 px-4 rounded-lg bg-blend-multiply bg-gray-300 hover:bg-gray-500 transition ease-in-out duration-300"
+            >
+              <div class="text-center">
+                <h3
+                  class="text-white text-sm font-bold bg-light p-2 bg-opacity-80 rounded-xl mb-2"
+                >
+                  PILAR KEHIDUPAN BUMI
+                </h3>
+                <p class="text-white text-xl font-semibold text-wrap">
+                  Mengenal Mamfaat Laut bagi bumi.
+                </p>
+              </div>
+              <div class="flex justify-center mt-24">
+                <a
+                  href="#"
+                  class="btn text-white bg-light bg-opacity-80 hover:bg-opacity-100 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 transition ease-in-out duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li
+              class="overflow-hidden mx-2 cardItem relative list-none min-w-[280px] h-[380px] bg-[url('img/page-1/bg.jpg')] bg-cover bg-center bg-no-repeat py-8 px-4 rounded-lg bg-blend-multiply bg-gray-300 hover:bg-gray-500 transition ease-in-out duration-300"
+            >
+              <div class="text-center">
+                <h3
+                  class="text-white text-sm font-bold bg-light p-2 bg-opacity-80 rounded-xl mb-2"
+                >
+                  PILAR KEHIDUPAN BUMI
+                </h3>
+                <p class="text-white text-xl font-semibold text-wrap">
+                  Mengenal Mamfaat Laut bagi bumi.
+                </p>
+              </div>
+              <div class="flex justify-center mt-24">
+                <a
+                  href="#"
+                  class="btn text-white bg-light bg-opacity-80 hover:bg-opacity-100 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 transition ease-in-out duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li
+              class="overflow-hidden mx-2 cardItem relative list-none min-w-[280px] h-[380px] bg-[url('img/page-4/bg.jpg')] bg-cover bg-center bg-no-repeat py-8 px-4 rounded-lg bg-blend-multiply bg-gray-300 hover:bg-gray-500 transition ease-in-out duration-300"
+            >
+              <div class="text-center">
+                <h3
+                  class="text-white text-sm font-bold bg-light p-2 bg-opacity-80 rounded-xl mb-2"
+                >
+                  EKO-SAFARI BAWAH LAUT
+                </h3>
+                <p class="text-white text-xl font-semibold text-wrap">
+                  Keanekaragaman hayati di bawah air
+                </p>
+              </div>
+              <div class="flex justify-center mt-24">
+                <a
+                  href="#"
+                  class="btn text-white bg-light bg-opacity-80 hover:bg-opacity-100 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 transition ease-in-out duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- <button id="scroll-right-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+              />
+            </svg>
+          </button> -->
+        </div>
+      </div>
+    </section>
+    <!-- daftar baca end -->
+
+    <!-- tentang start -->
+    <section class="bg-dark py-14 text-bg relative">
+      <div class="mx-7 md:mx-16">
+        <h1 class="text-3xl md:text-5xl font-semibold">Tentang</h1>
+        <div
+          class="flex flex-col lg:flex-row lg:gap-10 mt-8 md:mt-12 border-solid border-primary border-2 md:border-none p-4 md:p-0"
+        >
+          <div class="max-w-full mb-4">
+            <img
+              src="src/img/home/tentang.jpg"
+              alt=""
+              class="w-full lg:hidden"
+            />
+            <img
+              src="src/img/home/tentang1.jpg"
+              alt=""
+              class="w-full hidden lg:block"
+            />
+          </div>
+          <div class="my-4">
+            <p class="text-sm font-light md:text-2xl">
+              Tiap tahun ada banyak sekali sampah yang berserkakan di laut hal
+              ini membuat rusaknya lingkungan laut. Rusaknya lingkungan laut
+              memiliki dampak negatif untuk ekosistem laut. Website ini hadi
+              untuk memberikan edukasi kepada masyarakat tentang betapa
+              pentingnya merawat lingkungan laut untuk menjaga ekosistem laut.
+            </p>
+            <div class="mt-6 md:mt-12">
+              <a
+                href="#"
+                class="bg-primary px-2 py-2 text-sm md:text-2xl text-font"
+                >Baca Selengkapnya</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tentang end -->
+
+    <!-- profil kreator start -->
+    <!-- <section>
+      <div>
+        <h1>Profile Kreator</h1>
+        <div>
+          <div>
+            <div>
+              <img src="#" alt="" />
+            </div>
+            <div>
+              <p>
+                Hai semuanya perkenalkan saya Arya, tujuan saya dalah
+                menyadarkan masyarakat agar peduli dengan ekosistem laut. Tentu
+                saja rusaknya ekosistem laut akan berdampak pada manusia juga.
+              </p>
+              <div>
+                <a href="#">Baca Selenkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- profil kreator end -->
+
+    <!-- footer start -->
+    <footer class="bg-dark text-bg">
+      <div class="mx-7 md:mx-16 py-4 md:py-12 flex justify-between items-end">
+        <div>
+          <h1 class="font-bold text-xl md:text-3xl">OCEANIA</h1>
+          <p class="text-[10px] md:text-lg">Marine Ecosystem</p>
+        </div>
+        <div>
+          <p class="text-[10px] md:text-lg">
+            Copyright © 2024 OCEAN - Marine Ecosystem
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

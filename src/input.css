@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fbf9ff;
+  color: #044d90;
+}
+
+.cardItem .btn {
+  opacity: 0; /* Awalnya tombol tidak terlihat */
+  transform: translateY(100%); /* Tombol dimulai dari bawah (-100%) */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Efek transisi */
+}
+
+.cardItem:hover .btn {
+  opacity: 1; /* Ketika card-link dihover, tombol akan muncul */
+  transform: translateY(0); /* Tombol akan berpindah ke posisi awal (0%) */
+}
+
+.scrollable-list {
+  -webkit-overflow-scrolling: touch;
+}
+
+.slick-next slick-arrow {
+  display: none !important;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  display: none;
+}
