@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceanica | PILAR KEHIDUPAN BUMI</title>
+
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <!-- hero start -->
+    <section
+      class="hero min-h-screen bg-blend-multiply bg-gray-500 relative"
+      style="background-image: url(src/img/page-1/bg.jpg)"
+    >
+      <div class="hero text-center text-neutral-content px-7 md:px-16">
+        <div class="">
+          <h1
+            class="mb-5 lg:mb-8 text-3xl md:text-6xl lg:text-7xl tracking-widest font-bold text-bg"
+          >
+            LAUT SEBAGAI <span class="text-primary">PILAR KEHIDUPAN</span> BUMI
+          </h1>
+          <p class="mb-5 text-lg md:text-2xl text-bg">
+            esensial bagi kesejahteraan manusia dan semua makhluk hidup di
+            planet ini.
+          </p>
+        </div>
+      </div>
+      <div class="absolute bottom-[-1%]">
+        <img src="src/img/page-1/svg1.svg" alt="" class="w-screen" />
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- mamfaat start -->
+    <section class="px-7 md:px-16 py-12 relative">
+      <h1 class="text-center mb-4 md:mb-16 text-3xl md:text-5xl font-semibold">
+        Mamfaat laut untuk alam
+      </h1>
+
+      <!-- button -->
+      <div class="my-8 flex flex-wrap gap-3 md:gap-5 justify-center">
+        <div
+          onclick="openBox('box1')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon1.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">Penghasil Oksigen</h2>
+        </div>
+        <div
+          onclick="openBox('box2')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon2.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">
+            Habitat Alami Biota Laut
+          </h2>
+        </div>
+        <div
+          onclick="openBox('box3')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon3.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">Sumber Makanan</h2>
+        </div>
+        <div
+          onclick="openBox('box4')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon4.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">
+            Mengurangi Pemanasan Global
+          </h2>
+        </div>
+        <div
+          onclick="openBox('box5')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon5.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">
+            Pengendali Iklim Dan Suhu
+          </h2>
+        </div>
+        <div
+          onclick="openBox('box6')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon6.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">
+            Sumber Energi Alternatif
+          </h2>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div class="flex justify-center">
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box1"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box1.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Penghasil Oksigen
+            </h2>
+            <p class="text-lg md:text-2xl mb-4 md:mb-8 text-start">
+              Fitoplankton dan ganggang laut, produsen utama oksigen, menyumbang
+              sekitar 70% oksigen di atmosfer bumi. Ancaman terhadap ekosistem
+              laut bisa mengganggu suplai oksigen manusia. Kehidupan laut
+              krusial bagi kita.
+            </p>
+            <button
+              onclick="closeBox('box1')"
+              class="py-1 px-3 bg-primary text-lg md:text-2xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box2"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box2.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Habitat Alami Biota Laut
+            </h2>
+            <p class="text-lg md:text-2xl mb-4 md:mb-8 text-start">
+              Laut adalah habitat alami untuk berbagai biota, dari plankton
+              hingga ikan dan mamalia laut. Ini menyediakan makanan, tempat
+              berkembang biak, dan perlindungan bagi keanekaragaman hayati laut.
+            </p>
+            <button
+              onclick="closeBox('box2')"
+              class="py-1 px-3 bg-primary text-lg md:text-2xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box3"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box3.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">Sumber Makanan</h2>
+            <p class="text-lg md:text-2xl mb-4 md:mb-8 text-start">
+              Laut adalah sumber pangan bagi makhluk hidup, menyediakan protein
+              tinggi dan Omega 3 dari ikan dan biota laut lainnya. Namun,
+              kerusakan dan pencemaran laut dapat mengancam pasokan protein dan
+              mengganggu kehidupan mereka yang bergantung padanya.
+            </p>
+            <button
+              onclick="closeBox('box3')"
+              class="py-1 px-3 bg-primary text-lg md:text-2xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box4"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box4.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Mengurangi Pemanasan Global
+            </h2>
+            <p class="text-lg md:text-2xl mb-4 md:mb-8 text-start">
+              Fitoplankton dan ganggang laut menyerap karbondioksida dan
+              melepaskan oksigen melalui fotosintesis, mengurangi efek rumah
+              kaca dan pemanasan global dengan mengurangi jumlah gas rumah kaca
+              di atmosfer.
+            </p>
+            <button
+              onclick="closeBox('box4')"
+              class="py-1 px-3 bg-primary text-lg md:text-2xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box5"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box5.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Penghasil Oksigen
+            </h2>
+            <p class="text-lg md:text-2xl mb-4 md:mb-8 text-start">
+              Lautan saling terhubung dan berfungsi sebagai pengontrol suhu dan
+              iklim global. Mereka mengalirkan air dari wilayah panas ke yang
+              lebih dingin, menjaga stabilitas suhu dan keseimbangan. Laut juga
+              menyerap lebih dari 30% karbondioksida yang membantu mencegah
+              pemanasan global.
+            </p>
+            <button
+              onclick="closeBox('box5')"
+              class="py-1 px-3 bg-primary text-lg md:text-2xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box6"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box6.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Sumber Energi Alternatif
+            </h2>
+            <p class="text-lg md:text-2xl mb-4 md:mb-8 text-start">
+              Laut merupakan sumber energi alternatif yang potensial, terutama
+              dalam bentuk energi gelombang. Pembangkit listrik tenaga ombak
+              telah dibangun di banyak negara maju seperti Amerika Serikat dan
+              Inggris, menyediakan energi listrik ramah lingkungan tanpa polusi
+              udara atau gas rumah kaca.
+            </p>
+            <button
+              onclick="closeBox('box6')"
+              class="py-1 px-3 bg-primary text-lg md:text-2xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box1"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box1.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Penghasil Oksigen
+            </h2>
+            <p class="text-lg md:text-2xl mb-4 md:mb-8 text-start">
+              Fitoplankton dan ganggang laut, produsen utama oksigen, menyumbang
+              sekitar 70% oksigen di atmosfer bumi. Ancaman terhadap ekosistem
+              laut bisa mengganggu suplai oksigen manusia. Kehidupan laut
+              krusial bagi kita.
+            </p>
+            <button
+              onclick="closeBox('box1')"
+              class="py-1 px-3 bg-primary text-lg md:text-2xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="fixed top-0 left-0 w-full h-full bg-gray-500 bg-opacity-35 z-20 hidden"
+        id="blocked"
+      ></div>
+    </section>
+
+    <!-- mamfaat bagi manusia -->
+    <section class="bg-primary relative">
+      <div class="py-24 md:pt-52 px-7 md:px-16">
+        <h1 class="text-3xl md:text-5xl font-semibold mb-8">
+          Mamfaat laut untuk manusia
+        </h1>
+        <div
+          class="flex flex-col lg:flex-row lg:justify-center flex-wrap gap-3"
+        >
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box7.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 lg:flex-1"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semiboldmb-2">
+                Sumber Mata Pencaharian
+              </h2>
+              <p class="text-lg md:text-2xl">
+                Nelayan dan profesi terkait hidup dari laut, menukarkan hasil
+                tangkapan atau jasanya dengan uang untuk memperbaiki
+                kesejahteraan mereka. Namun, pencemaran laut mengancam sumber
+                penghasilan mereka, karena wisatawan enggan mengunjungi laut
+                yang tercemar dan berpotensi penuh sampah. Padahal, laut adalah
+                sumber nafkah bagi banyak orang.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box8.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 lg:flex-1"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semibold mb-2">
+                Sumber Mineral
+              </h2>
+              <p class="text-lg md:text-2xl">
+                garam berasal dari air laut yang diuapkan sehingga hanya tersisa
+                kristal-kristal garam. Kebutuhan manusia yang tak henti akan
+                garam akan terjamin selama ada laut, dan tentunya yang bersih.
+                Garam yang dibuat dari air laut yang kotor dan tercemar pun bisa
+                berbahaya bagi tubuh.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box9.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 bg-center"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semibold mb-2">
+                Sumber Bahan Tambang
+              </h2>
+              <p class="text-lg md:text-2xl">
+                Produksi minyak bumi sudah mulai bergeser dari daratan ke arah
+                perairan atau laut. Hal ini disebabkan oleh menipisnya cadangan
+                minyak di daratan, sementara semakin banyak cadangan minyak bumi
+                ditemukan di laut. Hal itu tidak mengherankan karena masih
+                banyak sekali sumber bahan tambang, seperti minyak bumi di
+                lautan dan belum dieksplorasi karena berbagai kesulitan dalam
+                melakukannya.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box10.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 lg:flex-1"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semiboldmb-2">
+                Cadangan Air
+              </h2>
+              <p class="text-lg md:text-2xl">
+                Air laut bisa diubah menjadi air tawar melalui desalinasi. Mesin
+                desalinasi digunakan di kapal untuk memperoleh air tawar saat
+                berlayar jauh. Walaupun penggunaannya masih terbatas, dengan
+                pertambahan populasi dan pencemaran air tawar, laut menjadi
+                sumber air yang potensial.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box11.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 lg:flex-1"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semibold mb-2">
+                Jalur Transportasi
+              </h2>
+              <p class="text-lg md:text-2xl">
+                Transportasi laut adalah solusi terbaik dan ekonomis untuk
+                negara-negara dengan banyak pulau seperti Indonesia. Kapal laut
+                dapat mengangkut berbagai jumlah penumpang dan barang,
+                menjadikannya pilihan yang lebih murah dibandingkan dengan
+                pesawat atau kendaraan darat untuk transportasi antarpulau.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box12.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 bg-bottom"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semibold mb-2">
+                Tempat Rekreasi
+              </h2>
+              <p class="text-lg md:text-2xl">
+                Laut adalah tempat rekreasi yang menyenangkan untuk melepaskan
+                kejenuhan. Melihat pemandangan laut biru dan bermain air bersama
+                keluarga atau teman memberikan kesegaran. Banyak wisatawan dari
+                mancanegara mengunjungi pulau-pulau seperti Bali atau Hawaii
+                untuk menikmati keindahan laut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="src/img/tentang/svg1.svg"
+        alt=""
+        class="w-screen absolute top-[-1%]"
+      />
+    </section>
+    <!-- mamfaat end -->
+
+    <!-- footer start -->
+    <footer class="bg-dark text-bg">
+      <div class="mx-7 md:mx-16 py-4 md:py-12 flex justify-between items-end">
+        <div>
+          <h1 class="font-bold text-xl md:text-3xl">OCEANIA</h1>
+          <p class="text-[10px] md:text-lg">Marine Ecosystem</p>
+        </div>
+        <div>
+          <p class="text-[10px] md:text-lg">
+            Copyright © 2024 OCEAN - Marine Ecosystem
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="script.js"></script>
+  </body>
+</html>

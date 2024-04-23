@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- contact start -->
+    <section
+      class="min-h-screen flex items-center lg:items-stretch justify-center bg-primary"
+    >
+      <div class="flex">
+        <div
+          class="flex flex-1 flex-col bg-white shadow-lg p-6 lg:p-16 min-w-[350px] md:min-w-[550px] lg:minh-full"
+        >
+          <h1 class="text-3xl md:text-5xl font-semibold mb-8">Kontak Kami</h1>
+          <form name="contact" class="flex flex-col gap-3 md:gap-5">
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Nama"
+              class="bg-gray-100 p-2 md:p-4 text-lg md:text-2xl outline-none"
+            />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              class="bg-gray-100 p-2 md:p-4 text-lg md:text-2xl outline-none"
+            />
+            <textarea
+              name="pesan"
+              id="pesan"
+              placeholder="Pesan / Pertanyaan"
+              class="bg-gray-100 p-2 md:p-4 text-lg md:text-2xl outline-none max-h-[180px] min-h-[180px]"
+            ></textarea>
+            <input
+              type="submit"
+              id="submit-btn"
+              class="text-lg md:text-2xl bg-primary p-2 focus:bg-primary/80"
+            />
+          </form>
+        </div>
+        <div class="hidden lg:flex flex-1">
+          <img src="src/img/home/bg2.jpg" alt="" class="min-h-full" />
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="bg-dark text-bg">
+      <div class="mx-7 md:mx-16 py-4 md:py-12 flex justify-between items-end">
+        <div>
+          <h1 class="font-bold text-xl md:text-3xl">OCEANIA</h1>
+          <p class="text-[10px] md:text-lg">Marine Ecosystem</p>
+        </div>
+        <div>
+          <p class="text-[10px] md:text-lg">
+            Copyright © 2024 OCEAN - Marine Ecosystem
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>
