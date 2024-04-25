@@ -17,6 +17,131 @@
     />
   </head>
   <body>
+    <!-- navbar start -->
+    <nav
+      class="bg-font bg-opacity-25 lg:bg-bg lg:bg-opacity-25 backdrop-blur-md px-7 md:px-16 py-4 md:py-3 fixed z-50 right-0 left-0 top-0 transition ease-in-out duration-500"
+      id="navbar"
+      data-aos="fade-down"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <div>
+          <a href="#" class="text-white text-3xl md:text-4xl font-bold"
+            >Oceanica</a
+          >
+        </div>
+        <div class="hidden lg:flex items-center space-x-8 text-xl font-medium">
+          <a href="index.html" class="text-white">Beranda</a>
+          <a href="tentang.html" class="text-white">Tentang</a>
+
+          <div class="relative group">
+            <button class="text-white focus:outline-none" id="materi-toggle">
+              Daftar Baca
+            </button>
+            <div
+              class="absolute top-full left-0 bg-white bg-opacity-25 backdrop-blur-md rounded-md py-2 mt-10 w-60 hidden"
+              id="materi-dropdown"
+            >
+              <a
+                href="materi1.html"
+                class="block px-4 py-2 text-xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+                >Pilar Kehidupan Bumi</a
+              >
+              <a
+                href="materi2.html"
+                class="block px-4 py-2 text-xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+                >Dekonstruksi Kerusakan Laut</a
+              >
+              <a
+                href="materi3.html"
+                class="block px-4 py-2 text-xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+                >Melindungi Ekosistem Bawah Laut</a
+              >
+              <a
+                href="materi4.html"
+                class="block px-4 py-2 text-xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+                >Pelangi Bawah Laut</a
+              >
+            </div>
+          </div>
+          <a href="profil.html" class="text-white">Profile</a>
+          <a href="contact.html" class="text-white">Kontak</a>
+        </div>
+        <div class="lg:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-6 md:h-9 w-6 md:w-9"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-4">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-2xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-2xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-2xl font-medium text-white hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-bg bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg font-medium md:text-2xl text-white hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg font-medium md:text-2xl text-white hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg font-medium md:text-2xl text-white hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg font-medium md:text-2xl text-white hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="#"
+          class="block py-2 md:py-4 px-4 text-lg md:text-2xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+          >Profile</a
+        >
+        <a
+          href="#"
+          class="block py-2 md:py-4 px-4 text-lg md:text-2xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+          >Kontak</a
+        >
+      </div>
+    </nav>
+    <!-- navbar end -->
+
     <!-- contact start -->
     <section
       class="min-h-screen flex items-center lg:items-stretch justify-center bg-primary"
@@ -65,16 +190,19 @@
     <footer class="bg-dark text-bg">
       <div class="mx-7 md:mx-16 py-4 md:py-12 flex justify-between items-end">
         <div>
-          <h1 class="font-bold text-xl md:text-3xl">OCEANIA</h1>
+          <h1 class="font-bold text-xl md:text-3xl">Oceanica</h1>
           <p class="text-[10px] md:text-lg">Marine Ecosystem</p>
         </div>
         <div>
           <p class="text-[10px] md:text-lg">
-            Copyright © 2024 OCEAN - Marine Ecosystem
+            Copyright © 2024 Oceanica - Marine Ecosystem
           </p>
         </div>
       </div>
     </footer>
     <!-- footer end -->
+
+    <!-- script -->
+    <script src="script.js"></script>
   </body>
 </html>

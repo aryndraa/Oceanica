@@ -6,7 +6,9 @@ module.exports = {
     "materi1.html",
     "materi2.html",
     "materi3.html",
+    "materi4.html",
     "contact.html",
+    "profil.html",
   ],
   theme: {
     extend: {

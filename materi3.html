@@ -14,23 +14,155 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- navbar start -->
+    <nav
+      class="bg-white bg-opacity-25 backdrop-blur-md px-7 md:px-16 py-4 md:py-6 fixed z-50 right-0 left-0 top-0 transition ease-in-out duration-500"
+      id="navbar"
+      data-aos="fade-down"
+      dura
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <div>
+          <a href="#" class="text-white text-3xl md:text-4xl font-bold"
+            >Oceanica</a
+          >
+        </div>
+        <div class="hidden lg:flex items-center space-x-8 text-xl font-medium">
+          <a href="index.html" class="text-white">Beranda</a>
+          <a href="tentang.html" class="text-white">Tentang</a>
+
+          <div class="relative group">
+            <button class="text-white focus:outline-none" id="materi-toggle">
+              Daftar Baca
+            </button>
+            <div
+              class="absolute top-full left-0 bg-white bg-opacity-25 backdrop-blur-md rounded-md py-2 mt-10 w-60 hidden"
+              id="materi-dropdown"
+            >
+              <a
+                href="materi1.html"
+                class="block px-4 py-2 text-xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+                >Pilar Kehidupan Bumi</a
+              >
+              <a
+                href="materi2.html"
+                class="block px-4 py-2 text-xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+                >Dekonstruksi Kerusakan Laut</a
+              >
+              <a
+                href="materi3.html"
+                class="block px-4 py-2 text-xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+                >Melindungi Ekosistem Bawah Laut</a
+              >
+              <a
+                href="materi4.html"
+                class="block px-4 py-2 text-xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+                >Pelangi Bawah Laut</a
+              >
+            </div>
+          </div>
+          <a href="profil.html" class="text-white">Profile</a>
+          <a href="contact.html" class="text-white">Kontak</a>
+        </div>
+        <div class="lg:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-6 md:h-9 w-6 md:w-9"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-4">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-2xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-2xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-2xl font-medium text-white hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-bg bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="materi1.html"
+              class="block px-4 py-2 text-lg font-medium md:text-2xl text-white hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="materi2.html"
+              class="block px-4 py-2 text-lg font-medium md:text-2xl text-white hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="materi3.html"
+              class="block px-4 py-2 text-lg font-medium md:text-2xl text-white hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="materi4.html"
+              class="block px-4 py-2 text-lg font-medium md:text-2xl text-white hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="profil.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-2xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+          >Profile</a
+        >
+        <a
+          href="contact.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-2xl font-medium text-white hover:bg-bg hover:bg-opacity-25"
+          >Kontak</a
+        >
+      </div>
+    </nav>
+    <!-- navbar end -->
+
     <!-- hero start -->
     <section
-      class="min-h-screen bg-[url('img/page-3/herobg.jpg')] bg-cover bg-blend-multiply bg-gray-300 lg:bg-center"
+      class="min-h-screen bg-[url('img/page-3/herobg.jpg')] bg-fixed bg-cover bg-blend-multiply bg-gray-300 lg:bg-center"
     >
       <div
         class="bg-bg min-h-[50vh] lg:min-h-[40vh] px-7 md:px-16 flex justify-center items-center"
       >
-        <div class="text-center lg:mt-24">
+        <div class="text-center lg:mt-24" data-aos="fade-down">
           <h1 class="text-3xl md:text-5xl lg:text-7xl font-semibold mb-2">
             Melindungi Keseimbangan Ekosistem Bawah Laut
           </h1>
           <p class="text-lg md:text-2xl mb-8">
             Solusi mengatasi rusaknya ekosistem laut
           </p>
-          <a href="#" class="flex justify-center">
+          <a href="#materi" class="flex justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -59,8 +191,8 @@
     <!-- hero end -->
 
     <!-- materi start -->
-    <section class="px-7 md:px-16 py-24">
-      <div class="my-8">
+    <section class="px-7 md:px-16 py-24" id="materi">
+      <div class="my-8" data-aos="fade-right">
         <h1 class="text-3xl md:text-5xl font-semibold mb-4">
           Kenapa kita harus merawat lingkungan laut?
         </h1>
@@ -78,13 +210,18 @@
         </p>
       </div>
       <div class="my-8">
-        <h1 class="text-3xl md:text-5xl font-semibold mb-4 md:mb-8 lg:mb-16">
+        <h1
+          class="text-3xl md:text-5xl font-semibold mb-4 md:mb-8 lg:mb-16"
+          data-aos="fade-right"
+        >
           Apa saja yang dapat kita lakukan untuk menjaga keberlangsungan
           ekosistem?
         </h1>
         <div class="flex flex-wrap lg:justify-center gap-5">
           <div
             class="p-4 md:p-6 border-font border-2 rounded-box lg:max-w-[550px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             <h2 class="text-2xl md:text-4xl font-medium mb-3">
               Pengurangan Polusi
@@ -99,6 +236,8 @@
           </div>
           <div
             class="p-4 md:p-6 border-font border-2 rounded-box lg:max-w-[550px]"
+            data-aos="fade-up"
+            data-aos-delay="400"
           >
             <h2 class="text-2xl md:text-4xl font-medium mb-3">
               Perlindungan Terumbu Karang
@@ -112,6 +251,8 @@
           </div>
           <div
             class="p-4 md:p-6 border-font border-2 rounded-box lg:max-w-[550px]"
+            data-aos="fade-up"
+            data-aos-delay="600"
           >
             <h2 class="text-2xl md:text-4xl font-medium mb-3">
               Pengelolaan Perikanan yang Berkelanjutan
@@ -124,6 +265,8 @@
           </div>
           <div
             class="p-4 md:p-6 border-font border-2 rounded-box lg:max-w-[550px]"
+            data-aos="fade-up"
+            data-aos-delay="800"
           >
             <h2 class="text-2xl md:text-4xl font-medium mb-3">
               Edukasi dan Kesadaran Masyarakat
@@ -146,12 +289,14 @@
       <div class="px-7 md:px-6">
         <h1
           class="text-3xl md:text-5xl font-semibold mb-8 lg:mb-20 text-center"
+          data-aos="fade-up"
         >
           Mengetahui jenis plastik dan waktu terurainya di air
         </h1>
         <div class="flex flex-wrap gap-10 justify-center">
           <div
             class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
           >
             <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
               <div class="flex-1 min-w-[30%] md:w-[20%]">
@@ -185,6 +330,7 @@
           </div>
           <div
             class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
           >
             <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
               <div class="flex-1 min-w-[30%] md:w-[20%]">
@@ -222,6 +368,7 @@
           </div>
           <div
             class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
           >
             <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
               <div class="flex-1 min-w-[30%] md:w-[20%]">
@@ -261,6 +408,7 @@
           </div>
           <div
             class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
           >
             <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
               <div class="flex-1 min-w-[30%] md:w-[20%]">
@@ -299,6 +447,7 @@
           </div>
           <div
             class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
           >
             <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
               <div class="flex-1 min-w-[30%] md:w-[20%]">
@@ -337,6 +486,7 @@
           </div>
           <div
             class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
           >
             <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
               <div class="flex-1 min-w-[30%] md:w-[20%]">
@@ -385,19 +535,41 @@
     <!-- jenis sampah end -->
 
     <!-- footer start -->
-    <footer class="bg-dark text-bg">
-      <div class="mx-7 md:mx-16 py-4 md:py-12 flex justify-between items-end">
-        <div>
-          <h1 class="font-bold text-lg md:text-3xl">OCEANIA</h1>
-          <p class="text-[10px] md:text-lg">Marine Ecosystem</p>
+    <footer class="footer footer-center p-10 bg-dark text-base-content">
+      <nav class="grid grid-flow-col gap-4 text-lg text-bg">
+        <a class="link link-hover" href="index.html">Beranda</a>
+        <a class="link link-hover" href="tentang.html">Tentang </a>
+        <a class="link link-hover" href="contact.html">Kontak</a>
+        <a class="link link-hover" href="profil.html">Profil</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4 text-bg">
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"> <i data-feather="github"></i></a>
+          <a href="#"><i data-feather="facebook"></i></a>
         </div>
-        <div>
-          <p class="text-[10px] md:text-lg">
-            Copyright © 2024 OCEAN - Marine Ecosystem
-          </p>
-        </div>
-      </div>
+      </nav>
+      <aside>
+        <p class="text-bg text-sm">
+          Copyright © 2024 Oceanica - Marine Ecosystem
+        </p>
+      </aside>
     </footer>
     <!-- footer end -->
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 800,
+      });
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
