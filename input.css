@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fbf9ff;
+  color: #044d90;
+}
+
+.cardItem .btn {
+  opacity: 0; /* Awalnya tombol tidak terlihat */
+  transform: translateY(100%); /* Tombol dimulai dari bawah (-100%) */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Efek transisi */
+}
+
+.cardItem:hover .btn {
+  opacity: 1; /* Ketika card-link dihover, tombol akan muncul */
+  transform: translateY(0); /* Tombol akan berpindah ke posisi awal (0%) */
+}
+
+.scrollable-list {
+  -webkit-overflow-scrolling: touch;
+}
+
+.slick-next slick-arrow {
+  display: none !important;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  display: none;
+}
+
+.fish1 {
+  animation: swimr 60s linear infinite;
+}
+
+@keyframes swimr {
+  0% {
+    right: -10%; /* Start from left side */
+  }
+  100% {
+    right: 100%; /* Move to right side */
+  }
+}
+
+.fish3 {
+  animation: swiml 40s linear infinite;
+}
+
+@keyframes swiml {
+  0% {
+    left: -20%; /* Start from left side */
+  }
+  100% {
+    left: 100%; /* Move to right side */
+  }
+}
+
+.bub1 {
+  animation: bubbleUp 25s ease-out infinite;
+}
+.bub2 {
+  /* animation-delay: 0.s; */
+  animation: bubbleUp 30s ease-out infinite;
+}
+.bub3 {
+  /* animation-delay: 1s; */
+  animation: bubbleUp 45s ease-out infinite;
+}
+.bub4 {
+  /* animation-delay: 2s; */
+  animation: bubbleUp 55s ease-out infinite;
+}
+.bub5 {
+  /* animation-delay: 3s; */
+  animation: bubbleUp 40s ease-out infinite;
+}
+
+@keyframes bubbleUp {
+  0% {
+    top: 88%;
+  }
+  100% {
+    top: 0%; /* Move to right side */
+  }
+}
